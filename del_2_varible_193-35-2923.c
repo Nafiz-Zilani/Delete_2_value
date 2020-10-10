@@ -12,7 +12,7 @@ int main()
     array_size = array_size - 1;
 
     ///Taking array data
-    printf("\nEnter data = ");
+    printf("\nEnter %d data = ", array_size);;
     for(counter=0 ; counter<=array_size ; counter++){
         scanf("%d", &data[counter]);
     }
