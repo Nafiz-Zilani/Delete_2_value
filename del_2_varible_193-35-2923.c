@@ -37,7 +37,6 @@ int main()
                 break;
             }
         }
-
         if(extra1 == 1){
             for( counter=save_box ; counter<=array_size ; counter++){
                 data[counter] = data[counter+1];
@@ -52,7 +51,6 @@ int main()
                 break;
             }
         }
-
         if(extra2 == 1){
             for( counter=save_box ; counter<=array_size ; counter++){
                 data[counter] = data[counter+1];
@@ -60,20 +58,15 @@ int main()
         }
 
         ///printing new data
-        if(extra1 == -1 ){                  ///If both values don't exist on array
-                if(extra2 == -1){
-
+        if(extra1 == -1 && extra2 == -1){                  ///If both values don't exist on array
             printf("\n%d & %d  not found.", search1, search2);
             printf("\nNew array = |");
 
             for(counter=0 ; counter<=array_size ; counter++){
             printf("%d|", data[counter]);
             }
-
-                }
         }
         else if(extra1 != 1){              ///If first search value don't exist on array
-
             printf("\n%d is not found.", search1);
             printf("\nNew array = |");
             for(counter=0 ; counter<=array_size-1 ; counter++){
@@ -81,7 +74,6 @@ int main()
             }
         }
         else if(extra2 != 1){             ///If second search value don't exist on array
-
             printf("\n%d is not found.", search2);
             printf("\nNew array = |");
             for(counter=0 ; counter<=array_size-1 ; counter++){
@@ -90,13 +82,10 @@ int main()
 
         }
         else{                            ///If both values  exist on array
-
             printf("\nNew array = |");
             for(counter=0 ; counter<=array_size-2 ; counter++){
                 printf("%d|", data[counter]);
             }
         }
-
     return 0;
-
 }
