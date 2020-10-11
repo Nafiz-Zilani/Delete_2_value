@@ -2,10 +2,10 @@
 
 int main()
 {
-    int data [10], counter, search1, search2, save_box, array_size, extra1 = -1, extra2 = -1;
+    int data [100], counter, search1, search2, save_box, array_size, extra1 = -1, extra2 = -1;
 
     ///Taking array size
-    printf("How many data you want to save(less then 11) = ");
+    printf("How many data you want to save(<=100) = ");
     scanf("%d", &array_size);
 
     ///converting to array size
